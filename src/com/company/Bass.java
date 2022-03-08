@@ -17,22 +17,34 @@ public class Bass {
         return woodType;
     }
 
+    public void setNumStrings(int numStrings) {
+        this.numStrings = numStrings;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
+    }
+
+    public void setWoodType(String woodType) {
+        this.woodType = woodType;
+    }
+
     public Bass() {
-        this.numStrings = 4;
-        this.brandName = "unknown";
-        this.woodType = "unknown";
+        this.setNumStrings(4);
+        this.setBrandName("unknown");
+        this.setWoodType("unknown");
     }
 
     public Bass(String brandName, String woodType) {
-        this.numStrings = 4;
-        this.brandName = brandName;
-        this.woodType = woodType;
+        this.setNumStrings(4);
+        this.setBrandName(brandName);
+        this.setWoodType(woodType);
     }
 
     public Bass(int numStrings, String brandName, String woodType) {
-        this.numStrings = numStrings;
-        this.brandName = brandName;
-        this.woodType = woodType;
+        this.setNumStrings(numStrings);
+        this.setBrandName(brandName);
+        this.setWoodType(woodType);
     }
 
     public boolean isFourString() {
